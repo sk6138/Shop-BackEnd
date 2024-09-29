@@ -27,9 +27,9 @@ To prevent this, the project POM contains empty overrides for these elements.
 If you manually switch to a different parent and actually want the inheritance, you need to remove those overrides.
 
 ### property
-PGHOST=postgres.railway.internal
+<!-- PGHOST=postgres.railway.internal
 PGPORT = 5432
 POSTGRES_DB=railway
 POSTGRES_PASSWORD=ITrQbDLUkgpvQZlJHUealMWummXrzEAf
 POSTGRES_USER=postgres
-PGHOST=postgres.railway.internal
+PGHOST=postgres.railway.internal -->
