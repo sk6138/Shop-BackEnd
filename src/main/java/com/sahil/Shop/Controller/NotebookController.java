@@ -13,7 +13,7 @@ import com.sahil.Shop.Service.NotebookService;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "https://https://shop-backend-production-d74a.up.railway.app/")
+@CrossOrigin(origins = "https://shop-frontend-six.vercel.app/")
 @RequestMapping("/api/notebooks")
 public class NotebookController {
 
