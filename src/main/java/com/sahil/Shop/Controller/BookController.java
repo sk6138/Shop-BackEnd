@@ -15,7 +15,7 @@ import com.sahil.Shop.Service.BookService;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "https://shop-frontend-production-7be9.up.railway.app/")
 @RequestMapping("/api/books")
 public class BookController {
 
