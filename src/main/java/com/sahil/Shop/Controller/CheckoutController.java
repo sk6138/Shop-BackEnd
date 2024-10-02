@@ -101,8 +101,8 @@ public class CheckoutController {
         // Create a checkout session
         SessionCreateParams params = SessionCreateParams.builder()
             .setMode(SessionCreateParams.Mode.PAYMENT)
-            .setSuccessUrl("https://shop-frontend-plum.vercel.app/success")
-            .setCancelUrl("https://shop-frontend-plum.vercel.app/cancel")
+            .setSuccessUrl("https://shop-frontend-plum.vercel.app/#/success")
+            .setCancelUrl("https://shop-frontend-plum.vercel.app/#/cancel")
             .addLineItem(
                 SessionCreateParams.LineItem.builder()
                     .setQuantity(1L)
