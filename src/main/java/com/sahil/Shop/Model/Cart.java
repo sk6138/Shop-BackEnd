@@ -23,6 +23,8 @@ public class Cart {
     private String productName;
     private Double price;
     private Integer quantity;
+    private Double total;
+    
 
     public Cart() {}
 
@@ -33,6 +35,8 @@ public class Cart {
         this.productName = productName;
         this.price = price;
         this.quantity = quantity;
+        total =price *quantity;
+
     }
 
     public Long getId() {
@@ -114,6 +118,14 @@ public class Cart {
     public Cart orElseThrow(Object object) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'orElseThrow'");
+    }
+
+    public Double getTotal() {
+        return total;
+    }
+
+    public void setTotal(Double total) {
+        this.total = total;
     }
 }
 
