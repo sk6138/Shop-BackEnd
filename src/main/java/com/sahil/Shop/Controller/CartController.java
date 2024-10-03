@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.sahil.Shop.Model.Book;
 import com.sahil.Shop.Model.Cart;
 import com.sahil.Shop.Model.CartRequest;
 import com.sahil.Shop.Service.CartService;
@@ -25,16 +26,9 @@ public class CartController {
     private CartService cartService;
 
      @PostMapping("/add")
-    public ResponseEntity<String> addToCart(@RequestBody CartRequest cartRequest) {
-        cartService.addToCart(
-                cartRequest.getUserId(),
-                cartRequest.getItem().getImage(),
-                cartRequest.getItem().getProductId(),
-                cartRequest.getItem().getProductName(),
-                cartRequest.getItem().getPrice(),
-                cartRequest.getItem().getQuantity()
-        );
-        return ResponseEntity.ok("Item added to cart successfully!");
+    public ResponseEntity<Cart> addToCart(@RequestBody Cart cart) {
+       Cart newcart = cartService.addToCart(cart);
+        return ResponseEntity.ok(newcart);
     }
 
     // Get all items in the user's cart

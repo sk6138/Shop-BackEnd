@@ -16,11 +16,7 @@ public class CartService {
 
     
 
-     public void addToCart(String userId,String image, Long productId, String productName, Double price, Integer quantity) {
-        Cart cart = new Cart(userId,image, productId, productName, price, quantity);
-        cartRepository.save(cart);
-    }
-
+    
    
 
     // Get all items in the user's cart
@@ -31,6 +27,12 @@ public class CartService {
     // Remove an item from the cart (optional)
     public void removeCartItem(Long cartItemId) {
         cartRepository.deleteById(cartItemId);
+    }
+
+
+
+    public Cart addToCart(Cart cart) {
+        return cartRepository.save(cart);
     }
 }
 
