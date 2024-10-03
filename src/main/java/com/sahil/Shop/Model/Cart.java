@@ -35,7 +35,7 @@ public class Cart {
         this.productName = productName;
         this.price = price;
         this.quantity = quantity;
-        total =price *quantity;
+        
 
     }
 
@@ -82,6 +82,7 @@ public class Cart {
     public Double getPrice() {
         return price;
     }
+   
 
     public void setPrice(Double price) {
         this.price = price;
@@ -121,12 +122,11 @@ public class Cart {
     }
 
     public Double getTotal() {
+        total=price*quantity;
         return total;
     }
 
-    public void setTotal(Double total) {
-        this.total = total;
-    }
+    
 }
 
 
