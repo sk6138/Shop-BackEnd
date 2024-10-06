@@ -26,7 +26,8 @@ public class CartService {
 
     // Remove an item from the cart (optional)
     public void removeCartItem(Long cartItemId) {
-        cartRepository.deleteById(cartItemId);
+         cartRepository.deleteById(cartItemId);
+         
     }
 
 
