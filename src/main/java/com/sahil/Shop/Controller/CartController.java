@@ -12,9 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sahil.Shop.Model.Book;
+
 import com.sahil.Shop.Model.Cart;
-import com.sahil.Shop.Model.CartRequest;
 import com.sahil.Shop.Service.CartService;
 
 @RestController
