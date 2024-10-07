@@ -7,7 +7,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
 @Entity
-public class Book {
+public class Accesaries {
 
     @Id
     private Long id;
@@ -17,9 +17,9 @@ public class Book {
     private String image;
 
     // Constructors, Getters, and Setters
-    public Book() {}
+    public Accesaries() {}
 
-    public Book(String name, String description, Double price, String image) {
+    public Accesaries(String name, String description, Double price, String image) {
         this.name = name;
         this.description = description;
         this.price = price;
@@ -66,7 +66,7 @@ public class Book {
         this.image = image;
     }
 
-    public List<Book> findAll() {
+    public List<Accesaries> findAll() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'findAll'");
     }
@@ -76,17 +76,17 @@ public class Book {
         throw new UnsupportedOperationException("Unimplemented method 'findById'");
     }
 
-    public Book save(Book Book) {
+    public Accesaries save(Accesaries Book) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'save'");
     }
 
-    public void delete(Book Book) {
+    public void delete(Accesaries Book) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'delete'");
     }
 
-    public Book orElseThrow(Object object) {
+    public Accesaries orElseThrow(Object object) {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'orElseThrow'");
     }
