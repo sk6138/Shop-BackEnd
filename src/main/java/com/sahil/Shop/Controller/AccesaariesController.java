@@ -26,8 +26,8 @@ public class AccesaariesController {
 
     // Get all notebooks
     @GetMapping("/all")
-    public List<Book> getAllAccesaaries() {
-        return acc.getAllAccesaaries();
+    public List<Accesaries> getAllAccesaaries() {
+        return acc.getAllNotebooks();
     }
 
     // Get notebook by ID
