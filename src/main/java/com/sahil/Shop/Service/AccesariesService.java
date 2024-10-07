@@ -50,7 +50,7 @@ public class AccesariesService {
         throw new UnsupportedOperationException("Unimplemented method 'deletebook'");
     }
 
-    public List<Book> getAllAccesaaries() {
+    public List<Accesaries> getAllAccesaaries() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getAllAccesaaries'");
     }
