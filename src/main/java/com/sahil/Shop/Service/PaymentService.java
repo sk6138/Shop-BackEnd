@@ -2,7 +2,7 @@
  import com.stripe.Stripe;
  import com.stripe.model.PaymentIntent;
  import com.stripe.param.PaymentIntentCreateParams;
- import java.util.Collections; // Ensure this is imported
+ import java.util.Arrays; // Ensure this is imported
 
  public class PaymentService {
 
@@ -13,9 +13,8 @@
          // Build payment intent parameters
          PaymentIntentCreateParams params = PaymentIntentCreateParams.builder()
              .setAmount((long) amount * 100) // Amount in smallest currency unit (e.g., cents)
-             .setCurrency("ind")
-             .addAllPaymentMethodType(Collections.singletonList("")) // Correct usage of singletonList
-             .build();
+             .setCurrency("inr") // Correct currency code for Indian Rupees
+    .addAllPaymentMethodType(Arrays.asList("card", "upi", "netbanking", "wallet"))  .build();
 
          // Create and return the payment intent
          return PaymentIntent.create(params);
