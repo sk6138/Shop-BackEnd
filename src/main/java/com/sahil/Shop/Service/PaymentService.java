@@ -13,8 +13,8 @@
          // Build payment intent parameters
          PaymentIntentCreateParams params = PaymentIntentCreateParams.builder()
              .setAmount((long) amount * 100) // Amount in smallest currency unit (e.g., cents)
-             .setCurrency("usd")
-             .addAllPaymentMethodType(Collections.singletonList("card")) // Correct usage of singletonList
+             .setCurrency("ind")
+             .addAllPaymentMethodType(Collections.singletonList("")) // Correct usage of singletonList
              .build();
 
          // Create and return the payment intent
