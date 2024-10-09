@@ -74,6 +74,7 @@ import com.stripe.model.checkout.Session;
 import com.stripe.param.checkout.SessionCreateParams;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -100,6 +101,7 @@ public class CheckoutController {
 
         // Create a checkout session
         SessionCreateParams params = SessionCreateParams.builder()
+        
             .setMode(SessionCreateParams.Mode.PAYMENT)
             .setSuccessUrl("https://shop-frontend-plum.vercel.app/#/success")
             .setCancelUrl("https://shop-frontend-plum.vercel.app/#/cancel")
