@@ -14,7 +14,7 @@
          PaymentIntentCreateParams params = PaymentIntentCreateParams.builder()
              .setAmount((long) amount * 100) // Amount in smallest currency unit (e.g., cents)
              .setCurrency("inr") // Correct currency code for Indian Rupees
-    .addAllPaymentMethodType(Arrays.asList("upi"))  .build();
+    .addAllPaymentMethodType(Arrays.asList("card", "upi", "netbanking", "wallet"))  .build();
 
          // Create and return the payment intent
          return PaymentIntent.create(params);
