@@ -48,6 +48,11 @@
     <artifactId>stripe-java</artifactId>
     <version>20.120.0</version> <!-- Use the latest version -->
 </dependency>
+      <dependency>
+    <groupId>commons-codec</groupId>
+    <artifactId>commons-codec</artifactId>
+    <version>1.15</version> <!-- Latest version for hashing -->
+</dependency>
 
 
 
