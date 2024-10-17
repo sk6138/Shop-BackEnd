@@ -80,7 +80,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/checkout")
-@CrossOrigin(origins = "http://localhost:5173/")// Adjust to your frontend's URL
+@CrossOrigin(origins = "https://shop-frontend-plum.vercel.app/")// Adjust to your frontend's URL
 public class CheckoutController {
 
   private String stripeSecretKey="sk_test_51Q3BhqP6fYAkdHlVUosQzSXCBLt0mcd7ZBqCcMwOpTjkVSWlFcjvmne354dkWhw3TY71LDyxIepn2V64x3sc59JJ00wqvvMhFt"; // Use your actual secret key
@@ -104,8 +104,8 @@ public class CheckoutController {
         
     
             .setMode(SessionCreateParams.Mode.PAYMENT)
-            .setSuccessUrl("http://localhost:5173/#/success")
-            .setCancelUrl("http://localhost:5173/#/cancel")
+            .setSuccessUrl("https://shop-frontend-plum.vercel.app/#/success")
+            .setCancelUrl("https://shop-frontend-plum.vercel.app/#/cancel")
             .addLineItem(
                 SessionCreateParams.LineItem.builder()
                     .setQuantity(1L)

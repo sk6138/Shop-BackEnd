@@ -16,7 +16,7 @@ import com.sahil.Shop.Service.ContactService;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173/")
+@CrossOrigin(origins = "https://shop-frontend-plum.vercel.app/")
 @RequestMapping("/api/contact")
 public class ContactController {
 

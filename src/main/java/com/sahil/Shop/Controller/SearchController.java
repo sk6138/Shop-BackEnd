@@ -14,7 +14,7 @@ import com.sahil.Shop.Service.SearchService;
 
 @RestController
 @RequestMapping("/api/search")
-@CrossOrigin(origins = "http://localhost:5173/")
+@CrossOrigin(origins = "https://shop-frontend-plum.vercel.app/")
 public class SearchController {
     
     @Autowired

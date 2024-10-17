@@ -8,7 +8,7 @@ import com.sahil.Shop.Service.PayUService;
 import java.util.Map;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173/")
+@CrossOrigin(origins = "https://shop-frontend-plum.vercel.app/")
 @RequestMapping("/api/payu")
 public class PayUController {
 
@@ -21,8 +21,8 @@ public class PayUController {
     // Create a payment request and return PayU URL and parameters
     @PostMapping("/create-payment")
     public ResponseEntity<Map<String, String>> createPayment(@RequestBody PaymentRequest paymentRequest) {
-        String successUrl = "http://localhost:5173/#/success"; // Your frontend success URL
-        String failureUrl = "http://localhost:5173/#/cancel"; // Your frontend failure URL
+        String successUrl = "https://shop-frontend-plum.vercel.app/#/success"; // Your frontend success URL
+        String failureUrl = "https://shop-frontend-plum.vercel.app/#/cancel"; // Your frontend failure URL
 
         Map<String, String> params = payUService.createPaymentRequest(
                 paymentRequest.getTxnId(),

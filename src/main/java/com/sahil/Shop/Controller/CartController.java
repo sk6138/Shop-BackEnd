@@ -18,7 +18,7 @@ import com.sahil.Shop.Service.CartService;
 
 @RestController
 @RequestMapping("/api/cart")
-@CrossOrigin(origins = "http://localhost:5173/")
+@CrossOrigin(origins = "https://shop-frontend-plum.vercel.app/")
 public class CartController {
 
     @Autowired
