@@ -15,7 +15,7 @@ import com.sahil.Shop.Service.BookService;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "https://shop-frontend-plum.vercel.app/")
+@CrossOrigin(origins = "http://localhost:5173/")
 @RequestMapping("/api/books")
 public class BookController {
 

@@ -11,7 +11,7 @@ import com.sahil.Shop.Model.PhoneRequest;
 import com.sahil.Shop.Model.Profile;
 
 @RestController
-@CrossOrigin(origins = "https://shop-frontend-plum.vercel.app/")
+@CrossOrigin(origins = "http://localhost:5173")
 @RequestMapping("/api")
 public class ProfileController {
 
